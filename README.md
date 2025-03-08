@@ -27,8 +27,6 @@
 
 In order to use multiple configurations in the same project or allow for other config delivery methods, `IdemConfigurationProvider` class can be overridden and provided to `IdemRuntime.SetConfigProvider()` before client/server initialization.
 
-```csharp
-
 ## Usage
 ### Minimalistic samples
 Can be found in `Idem/Sample/` folder. The samples are: `PackageUsageClient.cs` and `PackageUsageServer.cs`.
