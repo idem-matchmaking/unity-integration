@@ -1,0 +1,25 @@
+﻿{
+  "name": "gg.idem.unity-integration",
+  "version": "1.0.0",
+  "displayName": "Idem Unity Integration",
+  "description": "Player-based Idem matchmaking implementation for Unity, both client and server parts",
+  "unity": "2022.3",
+  "keywords": [
+    "idem",
+    "matchmaking",
+    "multiplayer",
+    "integration",
+    "client",
+    "server"
+  ],
+  "author": {
+    "name": "Idem",
+    "email": "match@idem.gg",
+    "url": "https://idem.gg"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/idem-matchmaking/unity-integration"
+  }
+}

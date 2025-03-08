@@ -1,0 +1,16 @@
+{
+    "name": "gg.idem.unity-integration.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:31e1c935c31b0644faf64b8236222b66"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
