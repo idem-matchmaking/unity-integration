@@ -1,16 +1,33 @@
-// TODO_IDEM
-// - make it plain that there can be only one IdemConfiguration per project, for multiple configs -- initialize IdemRuntime.Storage + override config provider
 # Idem Unity Integration
 [Player-based Idem matchmaking](https://docs.idem.gg/setup-player-based) integration package. Handles Idem API calls for both client and server implementation.
 
 ## Installation
-TODO
+### Unity Package Manager
+  * Open Package manager window in Unity
+  * Click on the `+` button in the top left corner
+  * Select `Add package from git URL`
+  * Enter `git+https://github.com/idem-matchmaking/unity-integration.git`
+  * Click `Add`
+### manifest.json
+  * Open `Packages/manifest.json`
+  * Add line for the latest version in the `main` branch
+``` json
+"gg.idem.unity-integration": "git+https://github.com/idem-matchmaking/unity-integration#wip/prototype",
+```
+  * Or for a specific release `1.0.0` use
+``` json
+"gg.idem.unity-integration": "git+https://github.com/idem-matchmaking/unity-integration#1.0.0",
+```
 
 ## Configuration
 * Follow the [Idem Unity Integration](https://docs.idem.gg/setup-player-based) guide to set up your Idem account
 * Go to `Idem -> Configuration` in the Unity Editor
 * Fill in `Game mode ID`, [Join code](https://docs.idem.gg/setup-player-based#%F0%9F%84%B2-retrieve-join-code), [User name and Password](https://console.idem.gg/api_users/) from Idem's dashboard
 * Press 'Apply config' to bake the values into the build
+
+In order to use multiple configurations in the same project or allow for other config delivery methods, `IdemConfigurationProvider` class can be overridden and provided to `IdemRuntime.SetConfigProvider()` before client/server initialization.
+
+```csharp
 
 ## Usage
 ### Minimalistic samples
