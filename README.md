@@ -2,6 +2,8 @@
 [Player-based Idem matchmaking](https://docs.idem.gg/setup-player-based) integration package. Handles Idem API calls for both client and server implementation.
 
 ## Installation
+### OpenUPM package
+[Install from OpenUPM package](https://openupm.com/packages/gg.idem.unity-integration/)
 ### Unity Package Manager
   * Open Package manager window in Unity
   * Click on the `+` button in the top left corner
@@ -14,9 +16,9 @@
 ``` json
 "gg.idem.unity-integration": "git+https://github.com/idem-matchmaking/unity-integration#wip/prototype",
 ```
-  * Or for a specific release `1.0.0` use
+  * Or for a specific release `v1.0.0` use
 ``` json
-"gg.idem.unity-integration": "git+https://github.com/idem-matchmaking/unity-integration#1.0.0",
+"gg.idem.unity-integration": "git+https://github.com/idem-matchmaking/unity-integration#v1.0.0",
 ```
 
 ## Configuration
