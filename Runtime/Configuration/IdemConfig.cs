@@ -23,7 +23,7 @@ namespace Idem.Configuration
 
         public string ConnectionUrl => serverType switch
         {
-            EServerType.Main => MainConnectionUrl,
+            EServerType.Int => MainConnectionUrl,
             EServerType.Beta => BetaConnectionUrl,
             EServerType.Custom => customUrl,
             _ => throw new ArgumentOutOfRangeException()
@@ -31,7 +31,7 @@ namespace Idem.Configuration
 
         public string ClientId => serverType switch
         {
-            EServerType.Main => MainIdemClientId,
+            EServerType.Int => MainIdemClientId,
             EServerType.Beta => BetaIdemClientId,
             EServerType.Custom => customClientId,
             _ => throw new ArgumentOutOfRangeException()

@@ -2,7 +2,7 @@
 {
     public enum EServerType
     {
-        Main,
+        Int,
         Beta,
         Custom
     }

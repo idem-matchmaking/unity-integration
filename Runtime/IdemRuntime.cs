@@ -18,6 +18,7 @@ namespace Idem
         public static EncryptedStorage Storage { private get; set; }
         public static IIdemClient Client => _client;
         public static IIdemServer Server => _server;
+        public static string GameId => Config.gameId;
 
         private static IdemConfig Config => configValue ??= configProvider.GetConfig();
 

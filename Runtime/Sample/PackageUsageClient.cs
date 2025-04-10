@@ -16,13 +16,13 @@ namespace Idem.Sample
             {
                 Debug.Log($"[Idem] EVENT Join info received: {joinInfo.providerName}");
             };
-            IdemRuntime.Client.FindMatch("1v1", new[] { "Frankfurt" });
+            IdemRuntime.Client.FindMatch(IdemRuntime.GameId, new[] { "Frankfurt" });
         }
 
         private void OnGUI()
         {
             if (GUI.Button(new Rect(100, 100, 100, 100), "Start MM"))
-                IdemRuntime.Client.FindMatch("1v1", new[] { "Frankfurt" });
+                IdemRuntime.Client.FindMatch(IdemRuntime.GameId, new[] { "Frankfurt" });
             if (GUI.Button(new Rect(100, 200, 100, 100), "Stop MM")) IdemRuntime.Client.StopMatchmaking();
         }
 

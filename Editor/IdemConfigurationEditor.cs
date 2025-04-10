@@ -53,13 +53,13 @@ namespace Idem.Editor
                 EditorGUILayout.Toggle("Verbose logging", _castedTarget.Config.debugLogging);
 
             EditorGUILayout.Space();
-            EditorGUILayout.LabelField("Server", EditorStyles.boldLabel);
+            EditorGUILayout.LabelField("Stage", EditorStyles.boldLabel);
             _castedTarget.Config.serverType =
                 (EServerType)EditorGUILayout.EnumPopup("Idem server", _castedTarget.Config.serverType);
             if (_castedTarget.Config.serverType == EServerType.Custom)
             {
                 _castedTarget.Config.customUrl =
-                    EditorGUILayout.TextField("Server URL", _castedTarget.Config.customUrl);
+                    EditorGUILayout.TextField("Websocket URL", _castedTarget.Config.customUrl);
                 _castedTarget.Config.customClientId =
                     EditorGUILayout.TextField("Client ID", _castedTarget.Config.customClientId);
             }

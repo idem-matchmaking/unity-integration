@@ -14,7 +14,7 @@
   * Open `Packages/manifest.json`
   * Add line for the latest version in the `main` branch
 ``` json
-"gg.idem.unity-integration": "git+https://github.com/idem-matchmaking/unity-integration#wip/prototype",
+"gg.idem.unity-integration": "git+https://github.com/idem-matchmaking/unity-integration",
 ```
   * Or for a specific release `v1.0.0` use
 ``` json
