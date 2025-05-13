@@ -1,6 +1,6 @@
 {
   "name": "gg.idem.unity-integration",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "displayName": "Idem Unity Integration",
   "description": "Player-based Idem matchmaking implementation for Unity, both client and server parts",
   "unity": "2022.3",
